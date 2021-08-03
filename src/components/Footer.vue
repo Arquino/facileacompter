@@ -11,15 +11,17 @@
     <div class="content_footer">
       <div class="row_footer">
         <div class="col_footer">
-            <h4>
-                Facilacompter, pour simplifier votre comptabilité et la gestion de
-          votre entreprise.
-            </h4> 
+          <h4>
+            Facilacompter, pour simplifier votre comptabilité et la gestion de
+            votre entreprise.
+          </h4>
         </div>
         <div class="col_footer">
           <h4>SERVICES</h4>
           <ul>
-            <li class="services" v-for="service in services" :key="service">{{ service }}</li>
+            <li class="services" v-for="service in services" :key="service">
+              {{ service }}
+            </li>
           </ul>
         </div>
         <div class="col_footer">
@@ -32,10 +34,29 @@
         </div>
         <div class="col_footer">
           <h4>NOUS CONTACTER</h4>
+          <p class="info">Info@facilacompter.com</p>
+          <p class="info">04 94 10 87 30</p>
+          <p class="info">
+            111 Chemin des Négadoux <br />
+            83140 Six-Fours les Plages
+          </p>
         </div>
       </div>
     </div>
-    <div class="cpr"></div>
+    <div class="cpr">
+      <p>
+        Facilacompter® est une marque déposée par Christelle Ouvrard, du Groupe
+        Fiducie Audit et Conseil®.
+      </p>
+      <div class="nav_footer">
+        <ul>
+          <li>Qui sommes-nous</li>
+          <li>Mention légale</li>
+          <li>CGV</li>
+          <li>CGU</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -92,20 +113,46 @@ export default {
   padding-left: 100px;
 }
 .col_footer h4 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
+}
+.col_footer .info {
+  margin-top: 25px;
 }
 
 ul {
   list-style: none;
-  
 }
 ul li {
   font-size: 15px;
-  line-height: 40px;
+  line-height: 32px;
 }
 
 .services {
-    font-weight: 400;
+  font-weight: 400;
+}
+.socials {
+  text-decoration: underline;
+}
+.cpr {
+  display: flex;
+  justify-content: space-between;
+}
+.cpr p {
+  margin-top: 70px;
+  width: 312px;
+  font-size: 10px;
+}
+
+.nav_footer ul {
+  display: flex;
+  margin-top: 50px;
+  font-size: 10px;
+}
+.nav_footer ul li {
+  display: flex;
+  margin-top: 60px;
+  font-size: 10px;
+  margin: 15px;
 }
 </style>
 
