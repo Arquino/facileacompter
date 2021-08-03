@@ -26,6 +26,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+ @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
